@@ -1,1 +1,1 @@
-web: gunicorn --workers 1 --timeout 120 app:app
+web: flask --app app run --host 0.0.0.0 --port $PORT
